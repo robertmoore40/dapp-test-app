@@ -67,3 +67,8 @@
 
            // Set the Contract
       var contract = web3.eth.contract(contractAbi).at(contractAddress);
+
+         // Display Candidate Name
+         contract.candidateName(function(err, candidateName) {
+            $('#candidateName').html(candidateName);
+          });
