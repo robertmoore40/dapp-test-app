@@ -55,3 +55,6 @@
       } else {
         web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:7545'));
       }
+
+         // Set Account
+         web3.eth.defaultAccount = web3.eth.accounts[0];
