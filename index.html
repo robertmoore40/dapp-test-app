@@ -60,7 +60,10 @@
          web3.eth.defaultAccount = web3.eth.accounts[0];
 
            // Set Contract Abi
-      var contractAbi = []; // Add Your Contract ABI here!!!
+      var contractAbi = []; 
 
         // Set Contract Address
-        var contractAddress = ''; // Add Your Contract address here!!!
+        var contractAddress = ''; 
+
+           // Set the Contract
+      var contract = web3.eth.contract(contractAbi).at(contractAddress);
