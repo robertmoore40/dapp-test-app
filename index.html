@@ -72,3 +72,7 @@
          contract.candidateName(function(err, candidateName) {
             $('#candidateName').html(candidateName);
           });
+
+              // Change the Candidate Name
+      $('form').on('submit', function(event) {
+        event.preventDefault();
